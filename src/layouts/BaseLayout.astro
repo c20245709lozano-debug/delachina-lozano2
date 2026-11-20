@@ -1,0 +1,33 @@
+
+---
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta
+      name="description"
+      content="The Friendship Project — a creative space for ideas, projects, and meaningful connections."
+    />
+
+    <meta name="theme-color" content="#fcfaff" />
+
+    <title>The Friendship Project</title>
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <script>
+      import "../scripts/animation.js";
+    </script>
+  </body>
+</html>
