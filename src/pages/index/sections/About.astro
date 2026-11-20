@@ -1,8 +1,273 @@
 
-<section id="about">
-  <h1>About Us</h1>
-  <p>
-    We are a creative team passionate about sharing ideas,
-    developing projects, and creating meaningful experiences.
-  </p>
+---
+import Card from "../../../components/Card.astro";
+---
+
+<section class="our-story" id="about">
+  <div class="story-background story-circle-one"></div>
+  <div class="story-background story-circle-two"></div>
+
+  <div class="story-container">
+
+    <!-- SECTION HEADER -->
+    <div class="story-heading">
+      <span class="section-label">
+        <span class="label-heart">♡</span>
+        THE STUDENTS BEHIND CK TOGETHER
+      </span>
+
+      <h2>
+        Two friends,
+        <span class="gradient-text">one shared vision.</span>
+      </h2>
+
+      <p class="heading-description">
+        Every great project starts with an idea.
+        Ours began with friendship, shared interests,
+        and a passion for creativity and technology.
+      </p>
+    </div>
+
+    <!-- TEAM INTRODUCTION -->
+    <div class="story-introduction">
+
+      <div class="story-image">
+        <div class="image-decoration decoration-top"></div>
+        <div class="image-decoration decoration-bottom"></div>
+
+        <div class="friendship-card">
+          <div class="friendship-card-header">
+            <span>CK TOGETHER</span>
+            <span>♡</span>
+          </div>
+
+          <div class="friendship-art">
+            <div class="art-sun"></div>
+            <div class="art-flower flower-left">✿</div>
+            <div class="art-flower flower-right">✿</div>
+
+            <div class="friend friend-one">
+              <div class="friend-head"></div>
+              <div class="friend-body"></div>
+            </div>
+
+            <div class="friend friend-two">
+              <div class="friend-head"></div>
+              <div class="friend-body"></div>
+            </div>
+
+            <div class="art-message">
+              Better together.
+            </div>
+          </div>
+
+          <div class="friendship-card-footer">
+            <span>CONNECT & KEEP</span>
+            <span>BUILT WITH CREATIVITY ♡</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-content">
+        <span class="small-label">HOW IT ALL STARTED</span>
+
+        <h3>
+          A friendship that grew into a shared passion for technology.
+        </h3>
+
+        <p>
+          CK Together was founded by two friends, Cuennie and Kim,
+          who share an interest in technology, creativity, and
+          developing digital solutions.
+        </p>
+
+        <p>
+          As BS Information Systems students, we continue to
+          develop our knowledge in programming, web development,
+          database management, and system design.
+        </p>
+
+        <p>
+          We created CK Together as our student freelancing team
+          to bring our ideas and skills together, explore
+          opportunities, and create meaningful digital
+          experiences for potential clients.
+        </p>
+
+        <a href="#services" class="story-link">
+          Discover what we offer
+          <span>↗</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- FOUNDERS -->
+    <div class="founders-section">
+      <div class="founders-heading">
+        <span class="small-label">MEET THE CREATORS</span>
+        <h3>The two minds behind CK Together.</h3>
+        <p>
+          Different perspectives, shared interests, and
+          a common goal of turning ideas into digital solutions.
+        </p>
+      </div>
+
+      <div class="founders-grid">
+
+        <div class="founder-card founder-cuennie">
+          <div class="founder-number">01</div>
+          <div class="founder-avatar avatar-pink">C</div>
+
+          <Card
+            title="Cuennie"
+            desc="Co-founder of CK Together, bringing creativity, ideas, and a passion for learning and developing digital solutions."
+          />
+
+          <span class="founder-caption">CO-FOUNDER</span>
+        </div>
+
+        <div class="founder-card founder-kim">
+          <div class="founder-number">02</div>
+          <div class="founder-avatar avatar-purple">K</div>
+
+          <Card
+            title="Kim"
+            desc="Co-founder of CK Together, combining technical knowledge, creativity, and a passion for building useful digital experiences."
+          />
+
+          <span class="founder-caption">CO-FOUNDER</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS & EXPERTISE -->
+    <div class="skills-section">
+
+      <div class="skills-heading">
+        <span class="story-label">OUR SKILLS & EXPERTISE</span>
+        <h3>Different strengths, <span>one creative team.</span></h3>
+        <p>
+          We combine our individual strengths in project planning,
+          system analysis, programming, web development, and design
+          to bring digital ideas to life.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- KIM -->
+        <article class="skills-card kim-skills">
+          <div class="skills-card-header">
+            <span class="skills-number">01</span>
+            <span class="skills-icon">✧</span>
+          </div>
+
+          <h4>Kim</h4>
+          <span class="skills-role">
+            WEB DEVELOPMENT, UI/UX DESIGN & PROJECT PLANNING
+          </span>
+
+          <p>
+            Focused on developing functional websites, creating
+            user-friendly interfaces, designing interactive prototypes,
+            programming, constructing databases, and developing
+            creative project concepts.
+          </p>
+
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>UI/UX Design</span>
+            <span>Figma</span>
+            <span>Prototyping</span>
+            <span>Backend Development</span>
+            <span>Programming</span>
+            <span>Database Construction</span>
+            <span>Project Concept Making</span>
+          </div>
+        </article>
+
+        <!-- CUENNIE -->
+        <article class="skills-card cuennie-skills">
+          <div class="skills-card-header">
+            <span class="skills-number">02</span>
+            <span class="skills-icon">♡</span>
+          </div>
+
+          <h4>Cuennie</h4>
+          <span class="skills-role">
+            SYSTEM PLANNING & ANALYSIS
+          </span>
+
+          <p>
+            Focused on organizing project requirements, analyzing
+            system needs, documenting ideas, creating wireframes,
+            and planning website structures and front-end concepts.
+          </p>
+
+          <div class="skill-tags">
+            <span>Project Documentation</span>
+            <span>System Analysis</span>
+            <span>Wireframing</span>
+            <span>Website Ideation</span>
+            <span>Frontend Concepts</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- MISSION AND VISION -->
+    <div class="purpose-grid">
+
+      <div class="purpose-card mission-card">
+        <div class="purpose-icon">♡</div>
+        <span class="small-label">OUR MISSION</span>
+        <h3>Turn ideas into practical digital solutions.</h3>
+        <p>
+          To apply our knowledge and skills in Information
+          Systems to create user-friendly websites, creative
+          designs, and useful digital solutions while continuing
+          to learn and grow as aspiring IT professionals.
+        </p>
+      </div>
+
+      <div class="purpose-card vision-card">
+        <div class="purpose-icon">✿</div>
+        <span class="small-label">OUR VISION</span>
+        <h3>Grow together through creativity and technology.</h3>
+        <p>
+          To become a collaborative and innovative student
+          freelancing team that transforms ideas into meaningful
+          digital experiences and continuously improves through
+          learning, teamwork, and practical experience.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CLOSING MESSAGE -->
+    <div class="story-closing">
+      <span class="closing-decoration">✧</span>
+
+      <h3>
+        Connected by friendship.
+        <span>Driven by creativity.</span>
+      </h3>
+
+      <p>
+        Together, we're learning, creating, and turning ideas
+        into something meaningful.
+      </p>
+
+      <a href="#services" class="closing-button">
+        Explore Our Services
+        <span>↗</span>
+      </a>
+    </div>
+
+  </div>
 </section>

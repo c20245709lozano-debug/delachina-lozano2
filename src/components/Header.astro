@@ -1,35 +1,40 @@
 
 ---
-import { Image } from "astro:assets";
-import logo from "../images/ck-logo.png";
+import lightLogo from "../images/ck-logo-light.png";
+import darkLogo from "../images/ck-logo-dark.png";
 ---
 
 <header class="site-header">
   <div class="header-container">
 
-    <!-- Brand -->
-    <a href="#hero" class="brand">
-      <Image
-        src={logo}
-        alt="CK Logo"
-        class="brand-logo"
-      />
+ <a href="#hero" class="brand">
+  <picture class="brand-picture">
+    <source
+      srcset={darkLogo.src}
+      media="(prefers-color-scheme: dark)"
+    />
 
-      <span class="brand-name">
-        CK Together
-        <span>Connect & Keep</span>
-      </span>
-    </a>
+    <img
+      src={lightLogo.src}
+      alt="CK Together logo"
+      class="brand-logo"
+    />
+  </picture>
+
+  <span class="brand-name">
+    CK Together
+    <span>Connect & Keep</span>
+  </span>
+</a>
 
     <!-- Navigation -->
-    <nav class="navigation" aria-label="Main navigation">
-      <a href="#hero" class="nav-item">Home</a>
-      <a href="#services" class="nav-item">Services</a>
-      <a href="#process" class="nav-item">Process</a>
-      <a href="#about" class="nav-item">About</a>
-      <a href="#projects" class="nav-item">Projects</a>
-      <a href="#contact" class="nav-item">Contact</a>
-    </nav>
+   <nav class="navigation">
+  <a href="#hero">Home</a>
+  <a href="#about">Our Story</a>
+  <a href="#services">Services</a>
+  <a href="#process">Our Process</a>
+  <a href="#contact">Contact</a>
+</nav>
 
     <!-- Call to Action -->
     <a href="#contact" class="header-button">

@@ -1,26 +1,184 @@
 
 ---
 import Card from "../../../components/Card.astro";
+
+const activities = [
+  {
+    number: "01",
+    category: "WEB DEVELOPMENT",
+    title: "Website Development",
+    desc: "Building responsive and user-friendly websites using HTML, CSS, JavaScript, and other web technologies.",
+    icon: "⌘",
+    color: "lavender",
+    link: "#contact",
+    action: "Discuss a project"
+  },
+  {
+    number: "02",
+    category: "DATABASE MANAGEMENT",
+    title: "Database Design",
+    desc: "Creating organized database structures, defining relationships, and managing information efficiently.",
+    icon: "▤",
+    color: "pink",
+    link: "#contact",
+    action: "Discuss a project"
+  },
+  {
+    number: "03",
+    category: "UI/UX DESIGN",
+    title: "Interface Design",
+    desc: "Designing website layouts, wireframes, and user-friendly interfaces with attention to usability and appearance.",
+    icon: "✧",
+    color: "blue",
+    link: "#contact",
+    action: "Discuss a project"
+  },
+  {
+    number: "04",
+    category: "SYSTEMS ANALYSIS",
+    title: "System Planning",
+    desc: "Identifying user requirements, organizing system features, and creating workflows for proposed solutions.",
+    icon: "⌘",
+    color: "pink",
+    link: "#contact",
+    action: "Discuss a project"
+  },
+  {
+    number: "05",
+    category: "SOFTWARE TESTING",
+    title: "Testing & Debugging",
+    desc: "Checking website and system functions, identifying errors, and improving overall performance and usability.",
+    icon: "✓",
+    color: "lavender",
+    link: "#contact",
+    action: "Discuss a project"
+  },
+  {
+    number: "06",
+    category: "TECHNICAL DOCUMENTATION",
+    title: "Project Documentation",
+    desc: "Preparing project descriptions, system diagrams, user guides, and other technical documentation.",
+    icon: "▧",
+    color: "blue",
+    link: "#contact",
+    action: "Discuss a project"
+  }
+];
 ---
 
-<section id="services">
-  <h1>Our Services</h1>
-  <p>Discover what we can offer.</p>
+<section class="wellness-section" id="services">
+  <div class="wellness-decoration wellness-decoration-one"></div>
+  <div class="wellness-decoration wellness-decoration-two"></div>
 
-  <div class="cards">
-    <Card
-      title="1. Service"
-      desc="A description of our first service."
-    />
+  <div class="wellness-container">
 
-    <Card
-      title="2. Service"
-      desc="A description of our second service."
-    />
+    <!-- SECTION HEADER -->
+    <div class="wellness-heading">
+      <span class="wellness-label">
+        <span>✿</span>
+        WHAT WE CAN DO
+      </span>
 
-    <Card
-      title="3. Service"
-      desc="A description of our third service."
-    />
+      <h2>
+        Turning ideas into
+        <span class="wellness-gradient">digital solutions.</span>
+      </h2>
+
+      <p>
+        As two BS Information Systems students, we bring together
+        creativity, technical knowledge, and problem-solving skills
+        to create meaningful digital projects.
+      </p>
+    </div>
+
+    <!-- FEATURED INTRODUCTION -->
+    <div class="wellness-feature">
+      <div class="feature-content">
+        <span class="feature-label">OUR SKILLS & EXPERTISE</span>
+
+        <h3>Creative ideas deserve thoughtful solutions.</h3>
+
+        <p>
+          From designing websites to planning information systems,
+          we enjoy transforming ideas into organized, functional,
+          and user-friendly digital experiences.
+        </p>
+
+        <a href="#wellness-activities" class="feature-link">
+          Explore our services
+          <span>↗</span>
+        </a>
+      </div>
+
+      <div class="feature-art">
+        <div class="feature-circle"></div>
+        <div class="feature-flower flower-one">✿</div>
+        <div class="feature-flower flower-two">✿</div>
+        <div class="feature-heart">♡</div>
+
+        <div class="feature-note">
+          <span>ideas into</span>
+          <strong>possibilities.</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES GRID -->
+    <div class="activities-heading" id="wellness-activities">
+      <div>
+        <span class="small-label">OUR TECHNICAL SKILLS</span>
+        <h3>What we can offer.</h3>
+      </div>
+
+      <span class="activity-count">06 SERVICES</span>
+    </div>
+
+    <div class="activities-grid">
+      {activities.map((activity) => (
+        <article class={`activity-card ${activity.color}`}>
+          <div class="activity-top">
+            <span class="activity-number">{activity.number}</span>
+            <span class="activity-icon">{activity.icon}</span>
+          </div>
+
+          <span class="activity-category">{activity.category}</span>
+
+          <Card
+            title={activity.title}
+            desc={activity.desc}
+          />
+
+          <a href={activity.link} class="activity-link">
+            {activity.action}
+            <span>↗</span>
+          </a>
+        </article>
+      ))}
+    </div>
+
+    <!-- CLOSING MESSAGE -->
+    <div class="wellness-bottom">
+      <span class="bottom-flower">✿</span>
+
+      <div>
+        <h3>Two students, one shared vision.</h3>
+        <p>
+          We continue learning, exploring technology, and building
+          projects that turn creative ideas into reality.
+        </p>
+      </div>
+
+      <a href="#contact" class="bottom-link">
+        Work with us
+        <span>↗</span>
+      </a>
+    </div>
+
+    <p class="wellness-disclaimer">
+      CK Together is a student-led freelancing portfolio.
+      Our services reflect our current skills, academic knowledge,
+      and project experience.
+    </p>
+
   </div>
 </section>

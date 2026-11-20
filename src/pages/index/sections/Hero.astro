@@ -14,35 +14,36 @@ import Card from "../../../components/Card.astro";
 
       <div class="hero-label">
         <span class="label-dot"></span>
-        A FRIENDSHIP-FOUNDED WELLNESS SPACE
+        A STUDENT-FOUNDED FREELANCING TEAM
       </div>
 
       <h1>
-        You don't have
-        <span class="gradient-text">to figure</span>
-        <span class="outline-text">it all alone.</span>
+        Turning ideas
+        <span class="gradient-text">into digital</span>
+        <span class="outline-text">experiences.</span>
       </h1>
 
       <p class="hero-description">
-        A little space created by two friends to encourage
-        kindness, self-understanding, and emotional well-being.
-        Take a breath, explore, and remember that your feelings matter.
+        We are two BS Information Systems students bringing
+        creativity and technology together. Through collaboration
+        and innovation, we create websites, designs, and digital
+        solutions that turn ideas into reality.
       </p>
 
       <div class="hero-actions">
         <a href="#about" class="hero-primary-btn">
-          Discover Our Story
+          Meet Our Team
           <span>↗</span>
         </a>
 
         <a href="#services" class="hero-secondary-btn">
-          Explore Wellness
+          Explore Our Services
         </a>
       </div>
 
       <div class="hero-note">
         <span class="note-line"></span>
-        A LITTLE KINDNESS CAN MAKE A DIFFERENCE
+        TWO MINDS. SHARED SKILLS. ONE CREATIVE TEAM.
       </div>
 
     </div>
@@ -55,8 +56,8 @@ import Card from "../../../components/Card.astro";
       <div class="friendship-illustration">
 
         <div class="illustration-heading">
-          <span>A GENTLER SPACE</span>
-          <span>♡</span>
+          <span>CREATIVITY MEETS TECHNOLOGY</span>
+          <span>✧</span>
         </div>
 
         <div class="friendship-art">
@@ -76,14 +77,14 @@ import Card from "../../../components/Card.astro";
           </div>
 
           <div class="art-caption">
-            Here, we listen.<br />
-            Here, we grow.
+            Ideas connect.<br />
+            Creativity grows.
           </div>
 
         </div>
 
         <div class="illustration-footer">
-          <span>LISTEN · UNDERSTAND · GROW</span>
+          <span>DESIGN · DEVELOP · CREATE</span>
           <span>01 / 02</span>
         </div>
 
@@ -93,16 +94,16 @@ import Card from "../../../components/Card.astro";
       <div class="reminder-card reminder-one">
         <span class="reminder-icon">♡</span>
         <Card
-          title="You matter."
-          desc="Your feelings deserve kindness."
+          title="Creative Ideas."
+          desc="Every great project starts with an idea."
         />
       </div>
 
       <div class="reminder-card reminder-two">
         <span class="reminder-icon">✿</span>
         <Card
-          title="Take your time."
-          desc="Growth doesn't have a deadline."
+          title="Built Together."
+          desc="Combining skills to create something meaningful."
         />
       </div>
 
@@ -113,532 +114,7 @@ import Card from "../../../components/Card.astro";
   </div>
 
   <div class="hero-scroll">
-    <span>TAKE A MOMENT TO EXPLORE</span>
+    <span>EXPLORE WHAT WE CAN CREATE</span>
     <span class="scroll-line"></span>
   </div>
 </section>
-
-<style>
-  .hero {
-    position: relative;
-    min-height: 720px;
-    padding: 100px 7% 95px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: #fbf8ff;
-    isolation: isolate;
-  }
-
-  .hero-container {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 55px;
-  }
-
-  /* BACKGROUND */
-
-  .hero-decoration {
-    position: absolute;
-    z-index: -1;
-    border-radius: 50%;
-    pointer-events: none;
-  }
-
-  .decoration-one {
-    width: 430px;
-    height: 430px;
-    top: -210px;
-    right: 5%;
-    background: #eee3ff;
-    opacity: .8;
-  }
-
-  .decoration-two {
-    width: 330px;
-    height: 330px;
-    bottom: -180px;
-    left: -100px;
-    background: #fce4ef;
-  }
-
-  /* CONTENT */
-
-  .hero-content {
-    max-width: 610px;
-  }
-
-  .hero-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    margin-bottom: 27px;
-    border: 1px solid #eadcf5;
-    border-radius: 50px;
-    background: white;
-    color: #80619b;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-  }
-
-  .label-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #df88b5;
-    box-shadow: 0 0 0 4px #fce7f2;
-  }
-
-  .hero h1 {
-    margin: 0;
-    color: #382344;
-    font-size: clamp(3.4rem, 6.1vw, 5.8rem);
-    font-weight: 800;
-    letter-spacing: -4px;
-    line-height: 1;
-  }
-
-  .hero h1 span {
-    display: block;
-  }
-
-  .gradient-text {
-    background: linear-gradient(100deg, #9560cf, #df83b5);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-  .outline-text {
-    color: transparent;
-    -webkit-text-stroke: 1.5px #9868c5;
-  }
-
-  .hero-description {
-    max-width: 460px;
-    margin: 27px 0;
-    color: #83748c;
-    font-size: 15px;
-    line-height: 1.9;
-  }
-
-  .hero-actions {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-
-  .hero-primary-btn,
-  .hero-secondary-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 15px 21px;
-    border-radius: 9px;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    transition: .3s ease;
-  }
-
-  .hero-primary-btn {
-    color: white;
-    background: linear-gradient(110deg, #9560cf, #d77fb7);
-    box-shadow: 0 9px 25px #b47ad044;
-  }
-
-  .hero-primary-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 13px 28px #b47ad066;
-  }
-
-  .hero-secondary-btn {
-    color: #76568e;
-    border: 1px solid #e5d7ef;
-    background: white;
-  }
-
-  .hero-secondary-btn:hover {
-    background: #f8f1ff;
-    transform: translateY(-3px);
-  }
-
-  .hero-note {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 50px;
-    color: #a08fa9;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-  }
-
-  .note-line {
-    width: 35px;
-    height: 1px;
-    background: #d98dbb;
-  }
-
-  /* RIGHT VISUAL */
-
-  .hero-visual {
-    position: relative;
-    min-height: 520px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .visual-circle {
-    position: absolute;
-    width: 390px;
-    height: 390px;
-    border-radius: 50%;
-    background: linear-gradient(140deg, #eadcff, #fce4f0);
-  }
-
-  .friendship-illustration {
-    position: relative;
-    z-index: 2;
-    width: min(370px, 82%);
-    padding: 16px;
-    border: 1px solid white;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 25px 65px #74528d22;
-    transform: rotate(-3deg);
-  }
-
-  .illustration-heading,
-  .illustration-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #a08cae;
-    font-size: 8px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-  }
-
-  .illustration-heading {
-    padding: 5px 3px 14px;
-  }
-
-  .illustration-heading span:last-child {
-    color: #e38ab9;
-    font-size: 20px;
-  }
-
-  .friendship-art {
-    position: relative;
-    height: 290px;
-    overflow: hidden;
-    border-radius: 8px;
-    background: linear-gradient(140deg, #e8d9ff, #fce5f0);
-  }
-
-  .sun-shape {
-    position: absolute;
-    top: -45px;
-    right: -35px;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    background: #f6c5df;
-  }
-
-  .person {
-    position: absolute;
-    bottom: 30px;
-    z-index: 2;
-    width: 115px;
-    text-align: center;
-  }
-
-  .person-one {
-    left: 48px;
-    transform: rotate(-7deg);
-  }
-
-  .person-two {
-    right: 48px;
-    transform: rotate(7deg);
-  }
-
-  .person-head {
-    width: 72px;
-    height: 80px;
-    margin: auto;
-    border: 5px solid white;
-    border-radius: 45%;
-    background: #d99bc0;
-    box-shadow: 0 5px 12px #76528d22;
-  }
-
-  .person-two .person-head {
-    background: #a88bd2;
-  }
-
-  .person-body {
-    width: 110px;
-    height: 75px;
-    margin: -4px auto 0;
-    border: 5px solid white;
-    border-radius: 55px 55px 12px 12px;
-    background: #e9a8c9;
-  }
-
-  .person-two .person-body {
-    background: #b7a0df;
-  }
-
-  .art-caption {
-    position: absolute;
-    top: 22px;
-    z-index: 3;
-    width: 100%;
-    color: #76528f;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: .98;
-    letter-spacing: -1.5px;
-    text-align: center;
-  }
-
-  .flower {
-    position: absolute;
-    z-index: 3;
-    color: white;
-    font-size: 35px;
-  }
-
-  .flower-one {
-    top: 90px;
-    left: 20px;
-  }
-
-  .flower-two {
-    right: 15px;
-    bottom: 20px;
-    color: #d58bb7;
-  }
-
-  .illustration-footer {
-    padding: 15px 3px 4px;
-    font-size: 7px;
-  }
-
-  /* REUSABLE CARD COMPONENTS */
-
-  .reminder-card {
-    position: absolute;
-    z-index: 4;
-    width: 190px;
-  }
-
-  .reminder-one {
-    top: 48px;
-    right: -15px;
-  }
-
-  .reminder-two {
-    bottom: 45px;
-    left: -20px;
-  }
-
-  .reminder-icon {
-    position: absolute;
-    top: -13px;
-    left: -12px;
-    z-index: 2;
-    display: grid;
-    width: 32px;
-    height: 32px;
-    place-items: center;
-    border-radius: 50%;
-    background: #fce4ef;
-    color: #d77fb7;
-    font-size: 18px;
-  }
-
-  .reminder-two .reminder-icon {
-    background: #eee3ff;
-    color: #9560cf;
-  }
-
-  .reminder-card :global(.card) {
-    padding: 17px;
-    border: 1px solid #f0e4f7;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 12px 30px #74528d18;
-  }
-
-  .reminder-card :global(.card h1) {
-    margin: 0 0 7px;
-    color: #50365f;
-    font-size: 14px;
-  }
-
-  .reminder-card :global(.card p) {
-    margin: 0;
-    color: #96869f;
-    font-size: 10px;
-    line-height: 1.6;
-  }
-
-  .floating-heart {
-    position: absolute;
-    z-index: 3;
-    color: #d98ab9;
-    font-size: 38px;
-  }
-
-  .heart-one {
-    top: 75px;
-    left: 25px;
-  }
-
-  .heart-two {
-    right: 25px;
-    bottom: 75px;
-  }
-
-  /* SCROLL */
-
-  .hero-scroll {
-    position: absolute;
-    right: 7%;
-    bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #a18fa9;
-    font-size: 8px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-  }
-
-  .scroll-line {
-    width: 40px;
-    height: 1px;
-    background: #d98dbb;
-  }
-
-  /* RESPONSIVE */
-
-  @media (max-width: 950px) {
-    .hero {
-      padding: 85px 6%;
-    }
-
-    .hero-container {
-      grid-template-columns: 1fr;
-      gap: 35px;
-    }
-
-    .hero-visual {
-      min-height: 500px;
-    }
-  }
-
-  @media (max-width: 520px) {
-    .hero {
-      padding: 75px 6% 85px;
-    }
-
-    .hero h1 {
-      font-size: 3.1rem;
-      letter-spacing: -3px;
-    }
-
-    .hero-description {
-      font-size: 13px;
-    }
-
-    .hero-actions {
-      align-items: stretch;
-      flex-direction: column;
-    }
-
-    .hero-primary-btn,
-    .hero-secondary-btn {
-      width: 100%;
-    }
-
-    .hero-visual {
-      min-height: 390px;
-    }
-
-    .friendship-illustration {
-      width: 78%;
-    }
-
-    .friendship-art {
-      height: 235px;
-    }
-
-    .person-one {
-      left: 15px;
-    }
-
-    .person-two {
-      right: 15px;
-    }
-
-    .person {
-      transform: scale(.8);
-      transform-origin: bottom center;
-    }
-
-    .art-caption {
-      font-size: 25px;
-    }
-
-    .reminder-card {
-      width: 155px;
-    }
-
-    .reminder-one {
-      top: 25px;
-      right: -5px;
-    }
-
-    .reminder-two {
-      bottom: 20px;
-      left: -5px;
-    }
-
-    .reminder-card :global(.card) {
-      padding: 12px;
-    }
-
-    .reminder-card :global(.card h1) {
-      font-size: 12px;
-    }
-
-    .reminder-card :global(.card p) {
-      font-size: 9px;
-    }
-
-    .visual-circle {
-      width: 300px;
-      height: 300px;
-    }
-
-    .hero-scroll {
-      display: none;
-    }
-  }
-</style>

@@ -1,15 +1,106 @@
-<section id="process">
-  <h1>Our Process</h1>
-  <p>Here's how we turn ideas into reality.</p>
 
-  <div>
-    <h2>01. Planning</h2>
-    <p>We organize ideas and establish our goals.</p>
+---
+import Card from "../../../components/Card.astro";
 
-    <h2>02. Creating</h2>
-    <p>We develop and work on our planned projects.</p>
+const steps = [
+  {
+    number: "01",
+    title: "Share Your Ideas",
+    desc: "Every project begins with a conversation. We listen to your ideas, understand your goals, and discuss what you want to create.",
+    icon: "✧",
+    color: "lavender",
+    label: "LET'S GET STARTED"
+  },
+  {
+    number: "02",
+    title: "Plan & Collaborate",
+    desc: "We organize your ideas, explore creative directions, and plan the details to build a project that matches your vision.",
+    icon: "♡",
+    color: "pink",
+    label: "BUILDING THE VISION"
+  },
+  {
+    number: "03",
+    title: "Design & Develop",
+    desc: "We combine our creativity and technical skills to create websites, designs, and digital solutions with care and attention to detail.",
+    icon: "✿",
+    color: "blue",
+    label: "TURNING IDEAS INTO REALITY"
+  },
+  {
+    number: "04",
+    title: "Review & Deliver",
+    desc: "We review the finished work, make improvements when needed, and present the final output ready for you to use.",
+    icon: "↗",
+    color: "lavender",
+    label: "MADE WITH PURPOSE"
+  }
+];
+---
 
-    <h2>03. Finalizing</h2>
-    <p>We review and complete our work.</p>
+<section class="process-section" id="process">
+  <div class="process-decoration process-decoration-one"></div>
+  <div class="process-decoration process-decoration-two"></div>
+
+  <div class="process-container">
+
+    <div class="process-heading">
+      <span class="process-label">
+        <span>✧</span> HOW WE BRING IDEAS TO LIFE
+      </span>
+
+      <h2>
+        From first idea to
+        <span>final creation.</span>
+      </h2>
+
+      <p>
+        Great digital projects start with collaboration. As two BS Information
+        Systems students, we combine our ideas, creativity, and technical
+        knowledge to create meaningful digital experiences.
+      </p>
+    </div>
+
+    <div class="process-grid">
+      {steps.map((step) => (
+        <article class={`process-card ${step.color}`}>
+          <div class="process-card-top">
+            <span class="step-number">{step.number}</span>
+            <span class="step-icon">{step.icon}</span>
+          </div>
+
+          <span class="step-label">{step.label}</span>
+
+          <Card title={step.title} desc={step.desc} />
+
+          <div class="step-bottom">
+            <span class="step-line"></span>
+            <span>CK TOGETHER</span>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="process-message">
+      <div class="message-icon">♡</div>
+
+      <div class="message-content">
+        <span class="message-label">A LITTLE ABOUT OUR TEAM</span>
+
+        <h3>Two friends. Different strengths. One shared vision.</h3>
+
+        <p>
+          We believe that great ideas become better through teamwork.
+          By combining our individual skills and learning together,
+          we aim to create digital work that is creative, thoughtful,
+          and meaningful.
+        </p>
+      </div>
+
+      <a href="#contact" class="process-button">
+        Work With Us <span>↗</span>
+      </a>
+    </div>
+
   </div>
 </section>
